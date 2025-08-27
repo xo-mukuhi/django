@@ -1,0 +1,18 @@
+/*signup.styles*/
+body{
+    --background-color: #950fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signup-form{
+    background-color: #950fff;
+    padding: 30px;
+}
+.button{
+    border: none;
+    padding: 12px;
+
+
+}

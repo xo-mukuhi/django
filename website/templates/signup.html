@@ -1,3 +1,5 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,12 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
 </head>
-<body>
-<form action="" method="POST">
+<body style="text-align: center; color: #950fff; justify-content: center; padding-top: 300px; border-radius: 20px ">
+<form action="" method="POST" class="signup-form" style="background-color: #c1d6cc; border-radius: 5px; padding: 45px 90px;">
     {% csrf_token %}
-    <input type="text" name="username" placeholder="Username"><br><br>
-    <input type="password" name="password" placeholder="Password"><br><br>
-    <button type="submit">Sign Up</button>
+    <h2>SIGN UP</h2>
+    <input type="text" name="username" placeholder="Username" style="border-radius: 10px; border: none; padding:12px; width: 300px"><br><br>
+    <input type="password" name="password" placeholder="Password" style="border-radius: 10px; border: none; padding: 12px; width:300px; "><br><br>
+    <button type="submit" style="padding: 9pxpx; margin: 9px; width: 120px; font-weight: bold">Sign Up</button>
     </form>
 </body>
 </html>

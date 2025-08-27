@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from website import views
+from website.views import dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('signup/', views.signup, name='signup'),
+    path('login/', views.login_view, name='login'),
+    path('dashboard/', dashboard, name='dashboard'),
+    path('add/',views.add_student, name='add'),
 
 ]

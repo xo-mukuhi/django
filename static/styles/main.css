@@ -8231,3 +8231,15 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*styles.signup*/
+body{
+  background-color:#9500ff ;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.form{
+  background-color: white;
+  padding: 20px;
+
+}
