@@ -29,5 +29,9 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('dashboard/', dashboard, name='dashboard'),
     path('add/',views.add_student, name='add'),
+    path('delete/<int:id>/',views.delete_student, name='delete'),
+    path('edit/<int:id>/',views.edit_student, name='edit'),
+    path('logout/', views.user_logout, name='logout'),
+    path('mpesaapi/', views.mpesaapi, name='mpesaapi'),
 
 ]
